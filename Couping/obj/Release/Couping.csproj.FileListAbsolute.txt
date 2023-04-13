@@ -1,0 +1,16 @@
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\bin\Release\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\bin\Release\Couping.pdb
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.Properties.Resources.resources
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.csproj.GenerateResource.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.csproj.CoreCompileInputs.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.pdb
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Release\Couping.csproj.AssemblyReference.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\bin\Release\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\bin\Release\Couping.pdb
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.Properties.Resources.resources
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.csproj.GenerateResource.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.csproj.CoreCompileInputs.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.pdb
+C:\Users\vlad-\OneDrive\Рабочий стол\КУРСОВОЫЙ\Couping\Couping\obj\Release\Couping.csproj.AssemblyReference.cache

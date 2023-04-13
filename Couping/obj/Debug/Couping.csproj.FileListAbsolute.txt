@@ -1,0 +1,5 @@
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\bin\Debug\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\bin\Debug\Couping.pdb
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Debug\Couping.csproj.CoreCompileInputs.cache
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Debug\Couping.dll
+C:\Users\vlad-\OneDrive\Рабочий стол\Couping\Couping\obj\Debug\Couping.pdb
