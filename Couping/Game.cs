@@ -64,9 +64,10 @@ namespace Couping
         //Метод вызывающийся при завершении игры
         public void EndProcess()
         {
-            _gameStatus = false;
+            _gameStatus = false; 
             AllClear();
             Invalidate();
+            WinOrLose();
         }
 
         public async void NextLvl() 
@@ -86,12 +87,22 @@ namespace Couping
                 GenerateCoup();
             }
         }
-        public void WinOrLose() 
+        public void WinOrLose()
         {
-            MessageBox.Show("You Win");
-            EndProcess();
+            AllClear();
+            if (_score <= 0)
+            {
+                MessageBox.Show($"You LOSE  <Your SCORE = {_score}>");                 
+            }
+            else
+            {
+                MessageBox.Show($"You Win <YOUR Score = {_score}>");                
+            }
+            _score = 1;
             gameLevel = 1;
+            _gameStatus = false;
         }
+
         //Метод очистки игровой зоны
         public void AllClear()
         {
@@ -222,12 +233,10 @@ namespace Couping
             int zj = e.Y / (_imSize + 20);
             if (e.Button == MouseButtons.Left)
             {
-
                 if (zi < cards1.Count && zj == 0)
                 {
                     flag1 = true;
                     selectedBone = zi;
-
                     fl1 = cards1.ElementAt(selectedBone);
                 }
                 if (zi < cards2.Count && zj == 1)
@@ -236,12 +245,22 @@ namespace Couping
                     selectedBone1 = zi;
                     fl2 = cards2.ElementAt(selectedBone1);
                 }
+                
                 IsCoup();
             }
             Invalidate();
         }
 
         public int left;
+        public int _score = 1;
+        public void RecordScore()
+        {
+            if (_score < 0)
+            {
+                _score = 0;
+                WinOrLose();
+            }
+        }
         //Метод проверки одинаковых изображений
         public async void IsCoup()
         {
@@ -250,8 +269,10 @@ namespace Couping
             if (flag1 == flag2)
             {
                 await Task.Delay(1000);
+
                 if (f1 == f2)
                 {
+                    _score+=2;
                     cards1bg[selectedBone] = 9;
                     cards1[selectedBone] = 9;
                     cards2bg[selectedBone1] = 9;
@@ -259,6 +280,7 @@ namespace Couping
                     flag1 = false;
                     flag2 = false;
                     left -= 1;
+
                     if (left == 0) 
                     { 
                         NextLvl(); 
@@ -266,10 +288,12 @@ namespace Couping
                 }
                 else
                 {
+                    _score--;
                     flag1 = false;
                     flag2 = false;                
                 }
             }
+            RecordScore();
             Invalidate();
         }
         protected override void SetBoundsCore(int x, int y, int width, int height, BoundsSpecified specified)

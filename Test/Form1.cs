@@ -8,9 +8,11 @@ namespace Test
         public Form1()
         {
             InitializeComponent();
-            lvl();
+            timer.Tick += new EventHandler(lvl);
+            timer.Interval = 100;
+            timer.Start();
         }
-
+        Timer timer = new Timer();
         private void game1_Click(object sender, MouseEventArgs e)
         {
             game1.onMouseClick(e);
@@ -18,8 +20,6 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lvl();
-            game1.EndProcess();
             game1.StarProcess();
         }
 
@@ -31,20 +31,21 @@ namespace Test
 
         private void button3_Click(object sender, EventArgs e)
         {
-            game1.EndProcess();
+            game1.AllClear();
             game1.gameLevel = 2;
-            lvl();
+            game1._score = 1;
             game1.StarProcess();
         }
-        private void lvl() 
+        private void lvl(object sender, EventArgs e)
         {
             label1.Text = "Lvl. " + game1.gameLevel.ToString();
+            label2.Text = "Score: " + game1._score; 
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            game1.EndProcess();
-            game1.gameLevel = 3; 
-            lvl();
+            game1.AllClear();
+            game1.gameLevel = 3;
+            game1._score = 1;
             game1.StarProcess();
         }
     }
